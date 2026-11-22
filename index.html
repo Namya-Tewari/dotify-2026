@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-background-black" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,29 +8,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      
+
       // Get all "navbar-burger" elements
       const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      
+
       // Add a click event on each of them
       $navbarBurgers.forEach(el => {
         el.addEventListener('click', () => {
-          
+
           // Get the target from the "data-target" attribute
           const target = el.dataset.target;
           const $target = document.getElementById(target);
-          
+
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
           el.classList.toggle('is-active');
           $target.classList.toggle('is-active');
-          
+
         });
       });
-      
+
     });
   </script>
 </head>
-
 <body>
   <nav class="navbar has-background-black">
     <div class="navbar-brand">
@@ -63,45 +62,87 @@
       </div>
     </div>
   </nav>
-  <main class="columns">
-    <section class="card has-text-centered">
-      <header class="card-header ">
-        <p class="card-header-title is-size-4 is-centered">
-          Chill
-        </p>
-      </header>
-      <div class="card-image">
-        <figure class="image">
-          <img src="https://images.unsplash.com/photo-1520809227329-2f94844a9635" alt="Image">
-        </figure>
-      </div>
-      
-      <article class="card-content">
-        <p class="content">
-          A playlist to chill your mind
-        </p>
-      </article>
-      
-      <footer class="card-footer">
-        <button class="card-footer-item button has-background-grey-lighter">Play</button>
-        <button class="card-footer-item button has-background-grey-lighter">Open</button>
-        <button class="card-footer-item button has-background-grey-lighter">Remove</button>
-      </footer>
-      
-    </section>
+  
+  <main class="columns is-multiline box has-background-grey-darker">
+    <div class="column is-12 has-text-centered has-text-white">
+      <p class="is-size-1">My Playlists</p>
+  </div>
     
     <div class="column is-4">
-      <section>
-        <p>Content Here</p>
+      <section class="card has-text-centered">
+        <header class="card-header">
+          <p class="card-header-title is-size-4 is-centered">
+            Chill
+          </p>
+        </header>
+        <div class="card-image">
+          <figure class="image">
+            <img src="https://images.unsplash.com/photo-1520809227329-2f94844a9635" alt="Image">
+          </figure>
+        </div>
+        <article class="card-content">
+          <p class="content is-size-4">
+            A playlist to chill your mind
+          </p>
+        </article>
+        <footer class="card-footer">
+          <button class="card-footer-item button has-background-grey-lighter">Play</button>
+          <button class="card-footer-item button has-background-grey-lighter">Open</button>
+          <button class="card-footer-item button has-background-grey-lighter">Remove</button>
+        </footer>
       </section>
     </div>
-    <div class="column is-4">
-      <section>
-        <p>Content Here</p>
+        <div class="column is-4">
+      <section class="card has-text-centered">
+        <header class="card-header">
+          <p class="card-header-title is-size-4 is-centered">
+            Focus
+          </p>
+        </header>
+        <div class="card-image">
+          <figure class="image">
+            <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a" alt="Image">
+          </figure>
+        </div>
+        <article class="card-content">
+          <p class="content is-size-4">
+            A playlist to focus the mind
+          </p>
+        </article>
+        <footer class="card-footer">
+          <button class="card-footer-item button has-background-grey-lighter">Play</button>
+          <button class="card-footer-item button has-background-grey-lighter">Open</button>
+          <button class="card-footer-item button has-background-grey-lighter">Remove</button>
+        </footer>
       </section>
     </div>
+
+        <div class="column is-4">
+      <section class="card has-text-centered">
+        <header class="card-header">
+          <p class="card-header-title is-size-4 is-centered">
+            Let Off Steam
+          </p>
+        </header>
+        <div class="card-image">
+          <figure class="image">
+            <img src="https://images.unsplash.com/photo-1625159510807-03f1d1b52bff" alt="Image">
+          </figure>
+        </div>
+        <article class="card-content">
+          <p class="content is-size-4">
+            A playlist for one of those days
+          </p>
+        </article>
+        <footer class="card-footer">
+          <button class="card-footer-item button has-background-grey-lighter">Play</button>
+          <button class="card-footer-item button has-background-grey-lighter">Open</button>
+          <button class="card-footer-item button has-background-grey-lighter">Remove</button>
+        </footer>
+      </section>
+    </div>
+
   </main>
-  
   <footer class="footer has-background-black has-text-white">
     <div class="container">
       <div class="content has-text-centered">
@@ -111,7 +152,5 @@
       </div>
     </div>
   </footer>
-  
-  
 </body>
 </html>
